@@ -18,7 +18,8 @@ test('get started link', async ({ page }) => {
 });
 
 test('playwright github', async ({ page }) => {
-  await page.goto('updated the url');
+  await page.goto('https://playwright.dev/');
+  console.log("Test");
 
   // Click the get started link.
   await page.getByRole('link', { name: 'Get started' }).click();
